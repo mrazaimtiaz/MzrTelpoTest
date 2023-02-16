@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/border_elevation.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border_style_blue_allside.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/border_style_blue_notop.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/border_style_green_notop.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/border_style_lightorange_leftalone.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/border_style_log.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/border_style_none.xml" value="0.172" />
+        <entry key="app/src/main/res/drawable/border_style_outer.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/border_style_white_nobottom.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/circle_progress.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/ic_info_black_24dp.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.173" />
+        <entry key="app/src/main/res/layout-land/activity_ely_scard.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout-land/fragment_ely_travel_doc.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout-land/fragment_ely_travel_doc_log.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout-sw600dp-land/activity_ely_scard.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout-sw600dp-land/fragment_ely_travel_doc.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout-sw600dp-land/fragment_ely_travel_doc_log.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout-sw600dp/activity_ely_scard.xml" value="0.14628623188405798" />
+        <entry key="app/src/main/res/layout-sw600dp/fragment_ely_travel_doc.xml" value="0.14628623188405798" />
+        <entry key="app/src/main/res/layout-sw600dp/fragment_ely_travel_doc_log.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout-w1024dp/fragment_ely_travel_doc_log.xml" value="0.1388888888888889" />
+        <entry key="app/src/main/res/layout/activity_ely_login.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_ely_mrz.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_ely_profile.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_ely_register.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_ely_scard.xml" value="0.14628623188405798" />
+        <entry key="app/src/main/res/layout/activity_ely_travel_doc.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/activity_read_mrz.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/dashboard_icon.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/elyscardreader_item.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/elyscardreader_item_list.xml" value="0.14628623188405798" />
+        <entry key="app/src/main/res/layout/elyscardreader_script.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/fragment_ely_travel_doc.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/fragment_ely_travel_doc_log.xml" value="0.1640625" />
+        <entry key="app/src/main/res/layout/securitycheck_item.xml" value="0.1640625" />
+        <entry key="app/src/main/res/menu/menu_ely_travel_doc.xml" value="0.1640625" />
+        <entry key="app/src/main/res/menu/menu_main.xml" value="0.1640625" />
+        <entry key="app/src/main/res/menu/menu_refresh.xml" value="0.1640625" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.173" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.173" />
+        <entry key="app/src/main/res/xml/pref_general.xml" value="0.1640625" />
+      </map>
+    </option>
+  </component>
+</project>

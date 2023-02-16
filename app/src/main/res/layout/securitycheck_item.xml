@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/medium_margin">
+
+<ImageView
+    android:id="@+id/securitycheck_item_img"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_margin="@dimen/minimal_margin"
+    android:scaleType="fitCenter"
+    android:src="@drawable/right"/>
+
+<TextView
+    android:id="@+id/securitycheck_item_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/securitycheck_item_img"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_marginLeft="@dimen/medium_margin"
+    android:textSize="@dimen/large_text_size"
+    android:textColor="@android:color/black"/>
+
+<TextView
+    android:id="@+id/securitycheck_item_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toRightOf="@id/securitycheck_item_img"
+    app:layout_constraintTop_toBottomOf="@id/securitycheck_item_label"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:textSize="@dimen/medium_text_size"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/securitycheck_item_time"
+    android:layout_width="@dimen/small_text_view_width"
+    android:layout_height="wrap_content"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/securitycheck_item_label"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginRight="@dimen/medium_margin"
+    android:textSize="@dimen/small_text_size"
+    android:textAlignment="center"
+    android:textStyle="italic"
+    android:background="@color/colorLightGray"
+    android:textColor="@color/colorCoolGray" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

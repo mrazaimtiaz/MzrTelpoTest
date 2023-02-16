@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/standard_horizontal_margin"
+    android:paddingTop="@dimen/standard_vertical_margin">
+
+    <TextView
+        android:id="@+id/elyscardreader_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:padding="@dimen/button_padding"
+        android:textSize="@dimen/medium_text_size"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.66"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/elyscardreader_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:textSize="@dimen/small_text_size"
+            android:textOff="@string/text_connect"
+            android:textOn="@string/text_disconnect"
+            android:defaultValue="false">
+            <tag android:id="@+id/reader"/>
+            <tag android:id="@+id/ref_atr"/>
+        </ToggleButton>
+
+        <TextView
+            android:id="@+id/elyscardreader_atr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:text="@string/text_no_card_connected" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/standard_vertical_margin"
+    android:paddingLeft="@dimen/standard_horizontal_margin"
+    android:paddingRight="@dimen/standard_horizontal_margin"
+    android:paddingTop="@dimen/standard_vertical_margin">
+
+    <TextView
+        android:text="Select protocol:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/medium_text_size"
+        android:padding="@dimen/text_padding" />
+
+    <Spinner
+        android:id="@+id/spinner_select_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/list_scard_protocol"/>
+
+    <TextView
+        android:text="Execute smartcard script file:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        android:textSize="@dimen/medium_text_size"
+        android:padding="@dimen/text_padding" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button_browse"
+            android:text="Select file"
+            android:textSize="@dimen/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"/>
+
+        <Button
+            android:id="@+id/button_execute"
+            android:text="Execute File"
+            android:textSize="@dimen/small_text_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:layout_marginStart="@dimen/button_vertical_margin"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_selected_file"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        android:textSize="@dimen/medium_text_size"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/textView_selected_reader"
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        android:textSize="@dimen/medium_text_size"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>

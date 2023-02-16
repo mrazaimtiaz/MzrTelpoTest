@@ -1,0 +1,54 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="standard_horizontal_margin">14dp</dimen>
+    <dimen name="standard_vertical_margin">14dp</dimen>
+    <dimen name="minimal_margin">3dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="medium_margin">14dp</dimen>
+    <dimen name="large_margin">26dp</dimen>
+    <dimen name="extra_large_margin">40dp</dimen>
+
+    <dimen name="button_padding">14dp</dimen>
+    <dimen name="button_vertical_margin">20dp</dimen>
+
+    <dimen name="appbar_padding_top">0dp</dimen>
+    <dimen name="web_view_zoom_size">90dp</dimen>
+    <dimen name="tiny_text_size">9dp</dimen>
+    <dimen name="extra_small_text_size">12dp</dimen>
+    <dimen name="small_text_size">14dp</dimen>
+    <dimen name="medium_text_size">18dp</dimen>
+    <dimen name="large_text_size">22dp</dimen>
+    <dimen name="text_padding">5dp</dimen>
+    <dimen name="small_text_padding">3dp</dimen>
+    <dimen name="large_text_padding">18dp</dimen>
+
+    <dimen name="radio_group_button_size">12dp</dimen>
+
+    <dimen name="extra_small_photo_width">125dp</dimen>
+    <dimen name="extra_small_photo_height">150dp</dimen>
+
+    <dimen name="small_photo_width">200dp</dimen>
+    <dimen name="small_photo_height">250dp</dimen>
+
+    <dimen name="big_photo_width">400dp</dimen>
+    <dimen name="big_photo_height">500dp</dimen>
+    <dimen name="doc_width">580dp</dimen>
+    <dimen name="small_doc_width">340dp</dimen>
+
+    <dimen name="floating_button_medium_size">55dp</dimen>
+    <dimen name="floating_button_size">70dp</dimen>
+
+    <dimen name="elevation">8dp</dimen>
+
+    <dimen name="listview_text_width">60dp</dimen> <!-- with huge scale equals to 16x'0' char long-->
+
+    <dimen name="small_text_view_width">120dp</dimen> <!-- with huge scale equals to 16x'0' char long-->
+    <dimen name="medium_text_view_width">240dp</dimen> <!-- with huge scale equals to 32x'0' char long-->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp
+    </dimen> <!-- with huge scale equals to 32x'0' char long-->
+</resources>
+

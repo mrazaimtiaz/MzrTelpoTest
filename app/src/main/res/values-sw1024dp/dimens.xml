@@ -1,0 +1,37 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="standard_horizontal_margin">22dp</dimen>
+    <dimen name="standard_vertical_margin">22dp</dimen>
+    <dimen name="minimal_margin">5dp</dimen>
+    <dimen name="small_margin">12dp</dimen>
+    <dimen name="medium_margin">22dp</dimen>
+    <dimen name="large_margin">43dp</dimen>
+    <dimen name="extra_large_margin">67dp</dimen>
+
+    <dimen name="button_padding">22dp</dimen>
+    <dimen name="button_vertical_margin">34dp</dimen>
+
+    <dimen name="appbar_padding_top">0dp</dimen>
+    <dimen name="web_view_zoom_size">150dp</dimen>
+
+    <dimen name="small_text_size">22dp</dimen>
+    <dimen name="medium_text_size">28dp</dimen>
+    <dimen name="large_text_size">33dp</dimen>
+    <dimen name="text_padding">8dp</dimen>
+    <dimen name="large_text_padding">24dp</dimen>
+
+    <dimen name="radio_group_button_size">20dp</dimen>
+
+    <dimen name="small_photo_width">340dp</dimen>
+    <dimen name="small_photo_height">425dp</dimen>
+
+    <dimen name="big_photo_width">680dp</dimen>
+    <dimen name="big_photo_height">850dp</dimen>
+
+    <dimen name="doc_width">980dp</dimen>
+
+    <dimen name="elevation">8dp</dimen>
+
+    <dimen name="small_text_view_width">196dp</dimen> <!-- with huge scale equals to 16x'0' char long-->
+    <dimen name="medium_text_view_width">392dp</dimen> <!-- with huge scale equals to 32x'0' char long-->
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ely_scard"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/standard_vertical_margin"
+    android:paddingLeft="@dimen/standard_horizontal_margin"
+    android:paddingRight="@dimen/standard_horizontal_margin"
+    android:paddingTop="@dimen/standard_vertical_margin"
+    tools:context="com.example.mzrtelpotest.ElySCardActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:id="@+id/fragment_reader_list"
+            android:name="com.example.mzrtelpotest.ElySCardReaderFragment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            tools:layout="@layout/elyscardreader_item_list" />
+
+        <fragment
+            android:id="@+id/fragment_script_control"
+            android:name="com.example.mzrtelpotest.ElySCardScriptFragment"
+            tools:layout="@layout/elyscardreader_script"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginLeft="@dimen/extra_large_margin"/>
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_ApduLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        android:background="@drawable/border_style_log" />
+
+</LinearLayout>

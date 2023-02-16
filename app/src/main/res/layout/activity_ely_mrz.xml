@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ely_mrz"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/standard_vertical_margin"
+    android:paddingLeft="@dimen/standard_horizontal_margin"
+    android:paddingRight="@dimen/standard_horizontal_margin"
+    android:paddingTop="@dimen/standard_vertical_margin"
+    tools:context="com.example.mzrtelpotest.ElyMrzActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btGetInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:textSize="@dimen/medium_text_size"
+            android:text="@string/text_get_info"
+            android:onClick="getInfo" />
+
+        <Button
+            android:id="@+id/btReadMrz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/button_padding"
+            android:layout_marginLeft="@dimen/button_vertical_margin"
+            android:textSize="@dimen/medium_text_size"
+            android:text="@string/text_read_mrz"
+            android:onClick="readMrz"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMrz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_padding"
+        android:textSize="@dimen/medium_text_size"
+        android:typeface="monospace"
+        android:maxLines="4"
+        android:lines="4" />
+
+</LinearLayout>

@@ -1,0 +1,353 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/standard_vertical_margin"
+    android:paddingLeft="@dimen/standard_horizontal_margin"
+    android:paddingRight="@dimen/standard_horizontal_margin"
+    android:paddingTop="@dimen/standard_vertical_margin"
+    tools:context="com.example.mzrtelpotest.ElyTravelDocFragment">
+
+    <ScrollView
+        android:id="@+id/docPanel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:elevation="@dimen/elevation"
+        app:layout_constraintBottom_toTopOf="@+id/securityCheckList"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/circle_progress"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.219"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.732" />
+
+            <TextView
+                android:id="@+id/docType"
+                android:layout_width="@dimen/extra_small_photo_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_horizontal_margin"
+                android:text="Passport"
+                android:textColor="@color/colorTitle"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/docIssuer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_horizontal_margin"
+                android:textColor="@color/colorTitle"
+                android:textSize="@dimen/small_text_size"
+                app:layout_constraintLeft_toRightOf="@+id/docType"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/extra_small_photo_width"
+                android:layout_height="@dimen/extra_small_photo_height"
+                android:background="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="@+id/personalInfoDesc"
+                app:layout_constraintLeft_toLeftOf="@id/docType"
+                app:layout_constraintTop_toBottomOf="@id/docType"
+                app:srcCompat="@drawable/person"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/personalInfoDesc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/textMrz"
+                app:layout_constraintLeft_toRightOf="@+id/imageView1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/docIssuer">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_padding"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_doc_type"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textDocType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/large_text_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_country_code"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textIssuer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/large_text_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_doc_num"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textDocNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_padding"
+                    android:text="@string/text_surname"
+                    android:textSize="@dimen/tiny_text_size" />
+
+                <TextView
+                    android:id="@+id/textSurName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/extra_small_text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_padding"
+                    android:text="@string/text_given_names"
+                    android:textSize="@dimen/tiny_text_size" />
+
+                <TextView
+                    android:id="@+id/textGivenName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/extra_small_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_padding"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_dob"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textDob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/large_text_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_gender"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_padding"
+                    android:text="@string/text_nationality"
+                    android:textSize="@dimen/tiny_text_size" />
+
+                <TextView
+                    android:id="@+id/textNationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/extra_small_text_size" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_padding"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_doe"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textDoe"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/large_text_padding"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_optional_info"
+                            android:textSize="@dimen/tiny_text_size" />
+
+                        <TextView
+                            android:id="@+id/textOptional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="@dimen/extra_small_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/textMrz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:background="@drawable/border_style_none"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="3"
+                android:maxLines="3"
+                android:padding="@dimen/text_padding"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/extra_small_text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/personalInfoDesc"
+                android:text=" "/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/securityCheckList"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/border_style_outer"
+        app:layout_constraintBottom_toTopOf="@+id/textInfoMsg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/docPanel">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textInfoMsg"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:padding="@dimen/text_padding"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/small_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonReadDocument"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonReadDocument"
+        android:layout_width="@dimen/floating_button_medium_size"
+        android:layout_height="@dimen/floating_button_medium_size"
+        android:layout_margin="@dimen/small_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_rf_epassort_white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

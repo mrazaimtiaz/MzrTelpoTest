@@ -1,0 +1,169 @@
+<resources>
+    <!-- Strings related to main activity -->
+    <string name="app_name">MZR </string>
+    <string name="sdk_version">1.x.x</string>
+
+    <!-- Strings related to alert dialog -->
+    <string name="title_error">Error</string>
+    <string name="title_info">Information</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+
+    <!-- Strings related to menu -->
+    <string name="menu_refresh">Refresh</string>
+
+    <!-- Strings related to ELY MRZ -->
+    <string name="title_activity_elymrz">ELY MRZ</string>
+    <string name="text_read_mrz">Read MRZ</string>
+    <string name="text_get_info">Get Info</string>
+
+    <!-- Strings related to ELY SCARD -->
+    <string name="title_activity_elyscard">ELY SCARD</string>
+    <string name="title_elyscardreader_list">Smartcard Readers</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_disconnect">Disconnect</string>
+    <string name="text_no_card_connected">No card connected</string>
+
+    <string name="pref_title_script_name">Script file</string>
+    <string name="pref_default_script_name">Not defined</string>
+    <string name="pref_title_screader">Smartcard reader</string>
+    <string name="pref_title_no_screader">No smartcard reader found</string>
+    <string name="pref_default_screader">No smartcard reader selected</string>
+
+    <!-- <string name="script_preferences">APDU Script</string>-->
+    <string-array name="list_scard_protocol">
+        <item>PROTOCOL_DEFAULT</item>
+        <item>PROTOCOL_T0</item>
+        <item>PROTOCOL_T1</item>
+        <item>PROTOCOL_UNDEFINED</item>
+    </string-array>
+
+    <!-- Strings related to ELY TRAVEL DOC -->
+    <string name="title_activity_ely_travel_doc">ELY TRAVEL DOC</string>
+    <string name="text_doc_type">Type</string>
+    <string name="text_country_code">Country code</string>
+    <string name="text_doc_num">Passport number</string>
+    <string name="text_surname">Surname</string>
+    <string name="text_given_names">Given names</string>
+    <string name="text_dob">Data of birth</string>
+    <string name="text_gender">Gender</string>
+    <string name="text_nationality">Nationality</string>
+    <string name="text_doe">Data of expiry</string>
+    <string name="text_issuer">Issuer</string>
+    <string name="text_optional_info">Optional info</string>
+
+    <string name="text_security_check">Security Check</string>
+
+    <string name="text_scan_mrz">Scan MRZ</string>
+    <string name="text_parse_mrz_info">Parse MRZ Information</string>
+    <string name="text_enter_can">Enter CAN</string>
+    <string name="text_establish_bac">Establish BAC</string>
+    <string name="text_establish_pace">Establish PACE</string>
+    <string name="text_plain_text_access">Plain Text Access</string>
+    <string name="text_read_dg1">Read DG1</string>
+    <string name="text_read_dg2">Read DG2</string>
+    <string name="text_decode_facial_img">Decode Facial Image</string>
+
+    <string name="info_default_msg">Insert document and press button to read data</string>
+    <string name="info_err_msg">Unexpected error has occured, press button to retry</string>
+    <string name="info_reading_msg">Reading document ...</string>
+
+    <!-- <string name="log">\tLog:\n\n</string>
+    <string name="details">\tDetails:\n</string>-->
+
+    <!-- Strings related to log option -->
+    <string name="text_enable_log">Enable Log</string>
+    <string name="text_disable_log">Disable Log</string>
+
+    <string name="log_msg">Please select log file to open</string>
+
+    <!-- Strings related to crash report -->
+    <string name="crash_toast_text">The application has crashed.</string>
+    <string name="crash_dialog_title">ID TAB Suite has crashed</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click OK.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_user_email_label">Please enter your email address:</string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+
+    <!-- Strings related to Settings -->
+    <!--<string name="action_settings">Settings</string>-->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to General -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_service">Enable foreground Document Service</string>
+    <string name="pref_description_service">Automatically read documents and pop up notification</string>
+
+    <!-- Strings related to Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; Sync</string>
+    <string name="pref_title_sync_url">URL</string>
+    <string name="pref_default_url">https://inspection-test.herokuapp.com/signins/</string>
+    <string name="pref_title_sync_operator">Operator</string>
+    <string name="pref_default_operator">demo@demo.com</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Strings related to Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_document_notifications">New document notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <!-- Strings related to Document Service -->
+    <string name="title_document_service">Document Service</string>
+    <string name="text_document_notification_waiting">"Waiting for insertion ..."</string>
+    <string name="text_document_notification_mrz_valid">MRZ checked:\n%1$s</string>
+    <string name="text_document_notification_mrz_invalid">Warning invalid MRZ:\n%1$s</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_stop">Stop</string>
+
+
+    <!-- Strings related to Peripheral management -->
+    <string name="text_waiting_peripheral">Initializing peripherals ...</string>
+    <!-- <string name="text_waiting_message">Please wait ...</string>-->
+
+
+    <!-- <string name="error_peripheral_conflict">Peripheral conflict</string>
+    -->
+
+
+    <string name="text_validated">Validated</string>
+    <string name="text_invalid_incorrect_data">Invalid or incorrect data</string>
+
+    <!-- Strings related to error msg -->
+    <string name="error_mrzscanner_conn">MRZ Scanner not found</string>
+    <string name="error_mrzscanner_nomrz">No decodable or visible MRZ</string>
+    <string name="error_mrzparser_failure">Failed parsing the MRZ</string>
+    <string name="error_scard_no_reader">No Card reader found</string>
+    <string name="error_scard_select_failure">Failed selecting the card</string>
+    <string name="error_scard_access_denied">Card access denied</string>
+    <string name="error_scard_read">Failed to read content</string>
+    <string name="error_peripheral_access_conflict">DocumentService is running, stop the service to access the peripherals.</string>
+
+    <string name="error_storage">Storage Error</string>
+    <string name="error_storage_not_mounted">Disk not mounted.</string>
+    <string name="error_file">File Error</string>
+    <string name="error_file_empty">File empty</string>
+    <string name="error_file_not_found">File not found</string>
+    <string name="error_decoding">Failed to decode data</string>
+
+</resources>

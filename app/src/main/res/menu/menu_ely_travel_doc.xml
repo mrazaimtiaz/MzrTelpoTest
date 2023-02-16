@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mzrtelpotest.ElyTravelDocActivity">
+
+    <item
+         android:id="@+id/enableLog"
+         android:orderInCategory="100"
+         android:title="@string/text_enable_log"
+         app:showAsAction="never" />
+     <item
+         android:id="@+id/disableLog"
+         android:orderInCategory="100"
+         android:title="@string/text_disable_log"
+         app:showAsAction="never" />
+ </menu>

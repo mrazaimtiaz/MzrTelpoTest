@@ -1,0 +1,9 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="service_switch"
+        android:summary="@string/pref_description_service"
+        android:title="@string/pref_title_service" />
+
+</PreferenceScreen>
