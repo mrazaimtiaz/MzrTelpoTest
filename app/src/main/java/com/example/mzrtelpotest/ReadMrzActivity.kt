@@ -100,7 +100,7 @@ class ReadMrzActivity : AppCompatActivity() {
                     mzr_text.setText(mrz.replace('\r', '\n'))
                     var record = MrzParser.parse(mrz.replace('\r', '\n'));
 
-                    mzr_text.setText(mrz.replace('\r', '\n') + "\n" + record.givenNames + " " + record.surname)
+                    mzr_text.setText(mrz.replace('\r', '\n') + "\n" + record.givenNames + " " + record.surname + "\n" + record.dateOfBirth + " " + record.dateOfBirth +  "\n" + record.nationality + " " + record.nationality +  "\n" + record.expirationDate + " " + record.expirationDate +  "\n" + record.sex + " " + record.sex)
                     System.out.println("Name: " + record.givenNames + " " + record.surname);
                 }
             }catch (e: Exception){
