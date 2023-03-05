@@ -165,5 +165,6 @@
     <string name="error_file_empty">File empty</string>
     <string name="error_file_not_found">File not found</string>
     <string name="error_decoding">Failed to decode data</string>
+    <string name="title_activity_compose_main">ComposeMainActivity</string>
 
 </resources>
