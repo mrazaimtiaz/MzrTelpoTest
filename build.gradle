@@ -1,6 +1,20 @@
 buildscript {
     ext {
         compose_ui_version = '1.1.1'
+        eventbus = "3.1.1"
+        openhealthcard_common = "1.1.2"
+        utils = "1.2.1"
+        test_utils = "1.1.1"
+    }
+    dependencies {
+        classpath "com.google.dagger:hilt-android-gradle-plugin:2.38.1"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.5.0-rc01"
+
+        classpath "de.gematik:gematik-parent-plugin:1.2.0"
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {

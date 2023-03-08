@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/java/com/example/mzrtelpotest/ComposeMainActivity.kt" value="0.6967509025270758" />
+        <entry key="app/src/main/res/drawable-v24/ic_drop_down.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/border_elevation.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/border_style_blue_allside.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/border_style_blue_notop.xml" value="0.173" />
@@ -13,6 +15,7 @@
         <entry key="app/src/main/res/drawable/border_style_outer.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/border_style_white_nobottom.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/circle_progress.xml" value="0.173" />
+        <entry key="app/src/main/res/drawable/ic_drop_down.xml" value="0.11" />
         <entry key="app/src/main/res/drawable/ic_info_black_24dp.xml" value="0.173" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.173" />
         <entry key="app/src/main/res/layout-land/activity_ely_scard.xml" value="0.1388888888888889" />
